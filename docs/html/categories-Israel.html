@@ -4,35 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categories</title>
-    <link rel="stylesheet" href="/public/css/categories.css">
+    <link rel="stylesheet" href="/docs/css/categories.css">
     <script src="https://code.iconify.design/iconify-icon/2.2.0/iconify-icon.min.js"></script>
 </head>
 <body>
-   <header>
-      <a href="#" class="logo" style="color: #e9f4e3;">
-          <iconify-icon icon="game-icons:soap" width="20" height="20" style="color: #e0e4d9;"></iconify-icon> Universoap
-      </a>
-      <ul class="navbar drop-down-menu">
-          <li><a href="/public/index.html" class="home-active">Home</a></li>
-          <li><a href="#categories">Categories</a>
-              <ul>
-                  <li><a href="/public/html/categories-Taiwan.html">Taiwan</a></li>
-                  <li><a href="/public/html/categories-Japan.html">Japan</a></li>
-                  <li><a href="/public/html/categories-Australia.html">Australia</a></li>
-                  <li><a href="/public/html/categories-Israel.html">Israel</a></li>
-                  <li><a href="/public/html/categories-South Korea.html">Korea</a></li>
-              </ul>
-          </li>
-          <li><a href="/public/html/product.html">Products</a></li>
-          <li><a href="/public/html/about us.html">About</a></li>
-          <li><a href="/public/html/member.html">Customers</a></li>
-          <li><a href="/public/html/Login.html">Login</a></li>
-          <div class="cart-icon" id="cart-icon">
-              <iconify-icon icon="mdi-light:cart" width="24" height="24"></iconify-icon>
-              <span id="cart-count">0</span>
-          </div>
-    </div>
- </header>
+       <!-- Navbar -->
+       <header>
+         <a href="#" class="logo" style="color: #e9f4e3;">
+             <iconify-icon icon="game-icons:soap" width="20" height="20" style="color: #e0e4d9;"></iconify-icon> Universoap
+         </a>
+         <ul class="navbar drop-down-menu">
+             <li><a href="index.html" class="home-active">Home</a></li>
+             <li><a href="#categories">Categories</a>
+                 <ul>
+                     <li><a href="html/categories-Taiwan.html">Taiwan</a></li>
+                     <li><a href="html/categories-Japan.html">Japan</a></li>
+                     <li><a href="html/categories-Australia.html">Australia</a></li>
+                     <li><a href="html/categories-Israel.html">Israel</a></li>
+                     <li><a href="public/html/categories-South Korea.html">Korea</a></li>
+                 </ul>
+             </li>
+             <li><a href="html/product.html">Products</a></li>
+             <li><a href="html/about us.html">About</a></li>
+             <li><a href="html/member.html">Customers</a></li>
+             <li><a href="html/Login.html">Login</a></li>
+             <li>
+                 <a href="html/shopping cart.html">
+                   <div class="cart-icon" id="cart-icon">
+                     <iconify-icon icon="mdi-light:cart" width="24" height="24"></iconify-icon>
+                     <span id="cart-count"></span>
+                   </div>
+                 </a>
+             </li>
+         </ul>
+     </header>
          <div class="cart-window" id="cart-window" style="display: none;">
            <h2>Shopping Cart</h2>
            <div id="cart-items"></div>
@@ -43,31 +48,31 @@
              <h1>Israel</h1>
              <div class="products-container">
                 <div class="box" data-order="t-1">
-                   <img src="../image/soaps/Israel/ISR2.jpg">
+                   <img src="image/soaps/Israel/ISR2.jpg">
                    <h2>玫瑰茶語甘油手工皂</h2>
                    <h3 class="price">$180/135g
                       <iconify-icon icon="mdi-light:cart" 
                          class="cart add-to-cart" 
                          data-name="玫瑰茶語甘油手工皂" 
                          data-price="180" 
-                         data-image="../image/soaps/Israel/ISR2.jpg"
+                         data-image="image/soaps/Israel/ISR2.jpg"
                          width="24" height="24">
                       </iconify-icon>
                    </h3>
                 </div>
                 <div class="box" data-order="t-2">
-                   <img src="../image/soaps/Israel/ISR3.jpg">
+                   <img src="image/soaps/Israel/ISR3.jpg">
                    <h2>迷迭香頌橄欖油手工皂</h2>
                    <h3 class="price">$180/100g<iconify-icon icon="mdi-light:cart" 
                       class="cart add-to-cart" 
                       data-name="迷迭香頌橄欖油手工皂" 
                       data-price="180" 
-                      data-image="../image/soaps/Israel/ISR3.jpg"
+                      data-image="image/soaps/Israel/ISR3.jpg"
                       width="24" height="24">
                    </iconify-icon></h3>
                 </div>
                 <div class="box" data-order="t-3">
-                   <img src="../image/soaps/Israel/ISR4.jpg">
+                   <img src="image/soaps/Israel/ISR4.jpg">
                    <h2>花果瑰瓣甘油手工皂</h2>
                    <h3 class="price">$200/200g*8<iconify-icon icon="mdi-light:cart" 
                       class="cart add-to-cart" 
@@ -83,7 +88,7 @@
           <div class="products-preview">
           <div class="preview" data-list="t-1">
              <iconify-icon icon="meteor-icons:xmark" class="meteor-icons-xmark" width="24" height="24"></iconify-icon>
-             <img src="../image/soaps/Israel/ISR2.jpg" alt="">
+             <img src="image/soaps/Israel/ISR2.jpg" alt="">
              <h1>玫瑰茶語甘油手工皂</h1>
              <div class="price">$180</div>
              <div class="description">採用天然甘油與玫瑰精華製成，富含保濕與滋潤成分，有效清潔肌膚同時鎖住水分。淡雅玫瑰與茶香交織，帶來放鬆心靈的沐浴享受，適合乾性及敏感肌膚使用。</div>
@@ -91,7 +96,7 @@
  
           <div class="preview" data-list="t-2">
               <iconify-icon icon="meteor-icons:xmark" class="meteor-icons-xmark" width="24" height="24"></iconify-icon>
-              <img src="../image/soaps/Israel/ISR3.jpg" alt="">
+              <img src="image/soaps/Israel/ISR3.jpg" alt="">
               <h1>迷迭香頌橄欖油手工皂</h1>
               <div class="price">$180</div>
               <div class="description">以高品質橄欖油為基底，融合迷迭香精華，溫和清潔並提供深層滋養，改善乾燥肌膚。迷迭香的清新香氣提神醒腦，是追求天然護膚與舒緩效果的理想選擇。</div>
@@ -99,13 +104,13 @@
  
           <div class="preview" data-list="t-3">
               <iconify-icon icon="meteor-icons:xmark" class="meteor-icons-xmark" width="24" height="24"></iconify-icon>
-              <img src="../image/soaps/Israel/ISR4.jpg" alt="">
+              <img src="image/soaps/Israel/ISR4.jpg" alt="">
               <h1>花果瑰瓣甘油手工皂</h1>
               <div class="price">$200</div>
               <div class="description">結合天然甘油與花果精華，添加玫瑰花瓣細粒，輕柔去角質，讓肌膚光滑細緻。花果香氣濃郁，清新而甜美，為肌膚帶來潔淨與滋潤雙重享受，適合全膚質使用。</div>
           </div>
        </section>
  </body>
- <script src="../js/categories.js"></script>
- <script src="../js/preview.js"></script>
+ <script src="js/categories.js"></script>
+ <script src="js/preview.js"></script>
  </html>>
