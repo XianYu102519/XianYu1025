@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <link rel="stylesheet" href="/public/css/product.css">
+    <script src="https://code.iconify.design/iconify-icon/2.2.0/iconify-icon.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo" style="color: #e9f4e3;">
+            <iconify-icon icon="game-icons:soap" width="20" height="20" style="color: #e0e4d9;"></iconify-icon> Universoap
+        </a>
+        <ul class="navbar drop-down-menu">
+            <li><a href="/public/index.html" class="home-active">Home</a></li>
+            <li><a href="#categories">Categories</a>
+                <ul>
+                    <li><a href="/public/html/categories-Taiwan.html">Taiwan</a></li>
+                    <li><a href="/public/html/categories-Japan.html">Japan</a></li>
+                    <li><a href="/public/html/categories-Australia.html">Australia</a></li>
+                    <li><a href="/public/html/categories-Israel.html">Israel</a></li>
+                    <li><a href="/public/html/categories-Korea.html">Korea</a></li>
+                </ul>
+            </li>
+            <li><a href="/public/html/product.html">Products</a></li>
+            <li><a href="/public/html/about us.html">About</a></li>
+            <li><a href="/public/html/member.html">Customers</a></li>
+            <li><a href="/public/html/Login.html">Login</a></li>
+            <div class="cart-icon" id="cart-icon">
+                <iconify-icon icon="mdi-light:cart" width="24" height="24"></iconify-icon>
+                <span id="cart-count">0</span>
+            </div>
+      </div>
+   </header>
+   <div class="cart-window" id="cart-window" style="display: none;">
+      <h2>Shopping Cart</h2>
+      <div id="cart-items"></div>
+      <p>Total：$<span id="total-price">0</span></p>
+      <button id="close-cart">Close</button>
+   </div>
+   
+   <section>
+    <h1>台灣</h1>
+    <div class="products-container">
+        <div class="box" data-order="t-1">
+            <img src="../image/soaps/Taiwan/TW1.png" alt="山原色手工皂">
+            <h2>山原色手工皂</h2>
+            <p class="description">採用天然山茶花精油製成，溫和滋潤肌膚，適合敏感肌使用。</p>
+            <h3 class="price">$180/135g
+                <iconify-icon icon="mdi-light:cart" class="cart add-to-cart" 
+                    data-name="山原色手工皂" data-price="180" 
+                    data-image="../image/soaps/Taiwan/TW1.png"
+                    width="24" height="24">
+                </iconify-icon>
+            </h3>
+        <div class="reviews">
+            <h4>商品評價</h4>
+            <div class="review-list"></div>
+            <div class="add-review">
+                <label for="review-text">撰寫評論：</label>
+                <textarea class="review-text" rows="2" placeholder="分享您的使用感受"></textarea>
+                <div class="rating">
+                    <label>評分：</label>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <button class="submit-review">提交評論</button>
+            </div>
+        </div>
+        <div class="box" data-order="t-2">
+            <img src="../image/soaps/Taiwan/TW2.png"> 
+            <h2>阿皂屋 澳洲冰河泥-去角質香氛皂</h2>
+            <p class="description">採用天然冰河泥，富含多種礦物質，能深層清潔毛孔、溫和去除老廢角質。同時結合植物精華，滋潤肌膚，保留水分平衡。淡雅香氛讓清潔過程更為愉悅，適合油性肌膚及需要去角質的用戶使用，還原肌膚潔淨與細緻觸感。</p>
+            <h3 class="price">$160/135g
+                <iconify-icon icon="mdi-light:cart" class="cart add-to-cart" 
+                    data-name="阿皂屋 澳洲冰河泥-去角質香氛皂" data-price="160" 
+                    data-image="../image/soaps/Taiwan/TW2.png"
+                    width="24" height="24">
+                </iconify-icon>
+            </h3>
+        <div class="reviews">
+            <h4>商品評價</h4>
+            <div class="review-list"></div>
+            <div class="add-review">
+                <label for="review-text">撰寫評論：</label>
+                <textarea class="review-text" rows="2" placeholder="分享您的使用感受"></textarea>
+                <div class="rating">
+                    <label>評分：</label>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <button class="submit-review">提交評論</button>
+            </div>
+        </div>
+        <div class="box" data-order="t-3">
+            <img src="../image/soaps/Taiwan/TW3.png" alt="台塩膠原蛋白黃金皂(玫瑰香氛)">
+            <h2>台塩膠原蛋白黃金皂(玫瑰香氛)</h2>
+            <p class="description">精選膠原蛋白與天然植物油脂，結合玫瑰精華，提供深層潔淨與滋潤效果。豐富細緻的泡沫能溫和清潔肌膚，同時鎖住水分，提升肌膚彈性與光澤。淡雅玫瑰香氣，讓每次清潔成為放鬆心靈的享受，適合所有膚質，特別適用於乾燥或需要修護的肌膚</p>
+            <h3 class="price">$160/135g
+                <iconify-icon icon="mdi-light:cart" class="cart add-to-cart" 
+                    data-name="台塩膠原蛋白黃金皂(玫瑰香氛)" data-price="160" 
+                    data-image="../image/soaps/Taiwan/TW3.png"
+                    width="24" height="24">
+                </iconify-icon>
+            </h3>
+        <div class="reviews">
+            <h4>商品評價</h4>
+            <div class="review-list"></div>
+            <div class="add-review">
+                <label for="review-text">撰寫評論：</label>
+                <textarea class="review-text" rows="2" placeholder="分享您的使用感受"></textarea>
+                <div class="rating">
+                    <label>評分：</label>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <button class="submit-review">提交評論</button>
+            </div>
+        </div>
+        <div class="box" data-order="t-4">
+            <img src="../image/soaps/Taiwan/TW5.png" alt="大春煉皂">
+            <h2>大春煉皂</h2>
+            <p class="description">一款以天然植物成分為基礎的手工皂品牌，強調純手工製作與環保理念。其產品通常以植物油、草本精華等為主要原料，注重肌膚的護理與舒適的使用感受。</p>
+            <h3 class="price">$200/135g
+                <iconify-icon icon="mdi-light:cart" class="cart add-to-cart" 
+                    data-name="大春煉皂" data-price="200" 
+                    data-image="../image/soaps/Taiwan/TW5.png"
+                    width="24" height="24">
+                </iconify-icon>
+            </h3>
+        <div class="reviews">
+            <h4>商品評價</h4>
+            <div class="review-list"></div>
+            <div class="add-review">
+                <label for="review-text">撰寫評論：</label>
+                <textarea class="review-text" rows="2" placeholder="分享您的使用感受"></textarea>
+                <div class="rating">
+                    <label>評分：</label>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <button class="submit-review">提交評論</button>
+            </div>
+        </div>
+  <!-- 可重複使用相同結構增加其他產品 -->
+    </div>
+</section>
+<section>
+    <h1>Japan</h1>
+    <div class="products-container">
+        <div class="box" data-order="t-1">
+            <img src="../image/soaps/Japan/JAP1.jpg" alt="鵜鶘肥皂">
+            <h2>鵜鶘肥皂</h2>
+            <p class="description">用於預防背部痤瘡的藥用肥皂</p>
+            <h3 class="price">$180/135g
+                <iconify-icon icon="mdi-light:cart" class="cart add-to-cart" 
+                    data-name="鵜鶘肥皂" data-price="180" 
+                    data-image="../image/soaps/Japan/JAP1.jpg"
+                    width="24" height="24">
+                </iconify-icon>
+            </h3>
+        <div class="reviews">
+            <h4>商品評價</h4>
+            <div class="review-list"></div>
+            <div class="add-review">
+                <label for="review-text">撰寫評論：</label>
+                <textarea class="review-text" rows="2" placeholder="分享您的使用感受"></textarea>
+                <div class="rating">
+                    <label>評分：</label>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <button class="submit-review">提交評論</button>
+            </div>
+        </div>
+        <div class="box" data-order="t-2">
+            <img src="../image/soaps/Japan/JAP2.jpg"> 
+            <h2>近江水鏡菁粹潔顏皂</h2>
+            <p class="description">帶走毛孔髒污，輕鬆維持肌膚所需的油水平衡</p>
+            <h3 class="price">$160/135g
+                <iconify-icon icon="mdi-light:cart" class="cart add-to-cart" 
+                    data-name="近江水鏡菁粹潔顏皂" data-price="160" 
+                    data-image="../image/soaps/Japan/JAP2.jpg"
+                    width="24" height="24">
+                </iconify-icon>
+            </h3>
+        <div class="reviews">
+            <h4>商品評價</h4>
+            <div class="review-list"></div>
+            <div class="add-review">
+                <label for="review-text">撰寫評論：</label>
+                <textarea class="review-text" rows="2" placeholder="分享您的使用感受"></textarea>
+                <div class="rating">
+                    <label>評分：</label>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <button class="submit-review">提交評論</button>
+            </div>
+        </div>
+        <div class="box" data-order="t-3">
+            <img src="../image/soaps/Japan/JAP3.jpg" alt="椰油精粹嫩白洗顏皂">
+            <h2>椰油精粹嫩白洗顏皂</h2>
+            <p class="description">通常含有椰子油提取物，這種成分有助於深層潔淨皮膚，同時滋潤和保護肌膚</p>
+            <h3 class="price">$160/135g
+                <iconify-icon icon="mdi-light:cart" class="cart add-to-cart" 
+                    data-name="椰油精粹嫩白洗顏皂" data-price="160" 
+                    data-image="../image/soaps/Japan/JAP3.jpg"
+                    width="24" height="24">
+                </iconify-icon>
+            </h3>
+        <div class="reviews">
+            <h4>商品評價</h4>
+            <div class="review-list"></div>
+            <div class="add-review">
+                <label for="review-text">撰寫評論：</label>
+                <textarea class="review-text" rows="2" placeholder="分享您的使用感受"></textarea>
+                <div class="rating">
+                    <label>評分：</label>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <button class="submit-review">提交評論</button>
+            </div>
+        </div>
+        <div class="box" data-order="t-4">
+            <img src="../image/soaps/Japan/JAP4.jpg" alt="Pelican馬油潤澤美膚皂">
+            <h2>Pelican馬油潤澤美膚皂</h2>
+            <p class="description">一款以馬油為主要成分的護膚手工皂，旨在提供深層滋潤和保濕效果，適合需要深層保濕和修復的肌膚，對於乾燥或敏感肌膚尤為適用。</p>
+            <h3 class="price">$200/135g
+                <iconify-icon icon="mdi-light:cart" class="cart add-to-cart" 
+                    data-name="Pelican馬油潤澤美膚皂" data-price="200" 
+                    data-image="../image/soaps/Japan/JAP4.jpg"
+                    width="24" height="24">
+                </iconify-icon>
+            </h3>
+        <div class="reviews">
+            <h4>商品評價</h4>
+            <div class="review-list"></div>
+            <div class="add-review">
+                <label for="review-text">撰寫評論：</label>
+                <textarea class="review-text" rows="2" placeholder="分享您的使用感受"></textarea>
+                <div class="rating">
+                    <label>評分：</label>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <button class="submit-review">提交評論</button>
+            </div>
+        </div>
+        <div class="box" data-order="t-5">
+            <img src="../image/soaps/Japan/JAP5.jpg" alt="牛乳石鹼紅盒皂">
+            <h2>牛乳石鹼紅盒皂</h2>
+            <p class="description">一款經典的保濕清潔產品，適合任何想要保持肌膚柔軟和滋潤的人使用，特別是在乾燥的季節，能有效緩解肌膚的乾燥問題。</p>
+            <h3 class="price">$150/130g
+                <iconify-icon icon="mdi-light:cart" class="cart add-to-cart" 
+                    data-name="牛乳石鹼紅盒皂" data-price="150" 
+                    data-image="../image/soaps/Japan/JAP5.jpg"
+                    width="24" height="24">
+                </iconify-icon>
+            </h3>
+        <div class="reviews">
+            <h4>商品評價</h4>
+            <div class="review-list"></div>
+            <div class="add-review">
+                <label for="review-text">撰寫評論：</label>
+                <textarea class="review-text" rows="2" placeholder="分享您的使用感受"></textarea>
+                <div class="rating">
+                    <label>評分：</label>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <button class="submit-review">提交評論</button>
+            </div>
+    </div>
+</section>
+<section>
+    <h1>Australia</h1>
+    <div class="products-container">
+        <div class="box" data-order="t-1">
+            <img src="../image/soaps/Australia/AST5.png" alt="Aesop滋潤保濕香皂">
+            <h2>Aesop滋潤保濕香皂</h2>
+            <p class="description">這款香皂是Aesop的經典產品之一，許多人喜歡它帶來的深層滋潤效果，尤其在寒冷季節或乾燥環境中，能有效維持肌膚的水油平衡。</p>
+            <h3 class="price">$180/135g
+                <iconify-icon icon="mdi-light:cart" class="cart add-to-cart" 
+                    data-name="Aesop滋潤保濕香皂" data-price="180" 
+                    data-image="../image/soaps/Australia/AST5.png"
+                    width="24" height="24">
+                </iconify-icon>
+            </h3>
+        <div class="reviews">
+            <h4>商品評價</h4>
+            <div class="review-list"></div>
+            <div class="add-review">
+                <label for="review-text">撰寫評論：</label>
+                <textarea class="review-text" rows="2" placeholder="分享您的使用感受"></textarea>
+                <div class="rating">
+                    <label>評分：</label>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <button class="submit-review">提交評論</button>
+            </div>
+        </div>
+        <div class="box" data-order="t-2">
+            <img src="../image/soaps/Australia/AST2.jpg"> 
+            <h2>澳洲植萃香氛皂</h2>
+            <p class="description">以澳洲本地植物萃取物為基礎的香氛皂，這些產品因其天然成分和獨特的香氣而受到廣泛喜愛，功能上強調護膚，還能提供一種天然、舒適的香氣體驗，是許多熱愛天然護膚的消費者首選。</p>
+            <h3 class="price">$160/135g
+                <iconify-icon icon="mdi-light:cart" class="cart add-to-cart" 
+                    data-name="澳洲植萃香氛皂" data-price="160" 
+                    data-image="../image/soaps/Australia/AST2.jpg"
+                    width="24" height="24">
+                </iconify-icon>
+            </h3>
+        <div class="reviews">
+            <h4>商品評價</h4>
+            <div class="review-list"></div>
+            <div class="add-review">
+                <label for="review-text">撰寫評論：</label>
+                <textarea class="review-text" rows="2" placeholder="分享您的使用感受"></textarea>
+                <div class="rating">
+                    <label>評分：</label>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <button class="submit-review">提交評論</button>
+            </div>
+        </div>
+        <div class="box" data-order="t-3">
+            <img src="../image/soaps/Australia/AST1.jpg" alt="澳洲製植物精油香皂">
+            <h2>澳洲製植物精油香皂</h2>
+            <p class="description">澳洲製植物精油香皂是一款以天然植物精油為基礎，專為護膚設計的香皂，通常以澳洲本地植物為原料，兼具天然香氛和多重護膚效果。</p>
+            <h3 class="price">$160/135g
+                <iconify-icon icon="mdi-light:cart" class="cart add-to-cart" 
+                    data-name="澳洲製植物精油香皂" data-price="160" 
+                    data-image="../image/soaps/Australia/AST1.jpg"
+                    width="24" height="24">
+                </iconify-icon>
+            </h3>
+        <div class="reviews">
+            <h4>商品評價</h4>
+            <div class="review-list"></div>
+            <div class="add-review">
+                <label for="review-text">撰寫評論：</label>
+                <textarea class="review-text" rows="2" placeholder="分享您的使用感受"></textarea>
+                <div class="rating">
+                    <label>評分：</label>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <button class="submit-review">提交評論</button>
+            </div>
+        </div>
+        <div class="box" data-order="t-4">
+            <img src="../image/soaps/Australia/AST3.jpg" alt="草本肌曜">
+            <h2>草本肌曜</h2>
+            <p class="description">一個注重天然草本成分的護膚品牌，主打純植物萃取與草本精華產品，旨在提供溫和、有效的護膚體驗。該品牌的產品常見於保濕、修護及舒緩肌膚等需求，特別適合敏感肌膚使用</p>
+            <h3 class="price">$200/135g
+                <iconify-icon icon="mdi-light:cart" class="cart add-to-cart" 
+                    data-name="草本肌曜" data-price="200" 
+                    data-image="../image/soaps/Australia/AST3.jpg"
+                    width="24" height="24">
+                </iconify-icon>
+            </h3>
+        <div class="reviews">
+            <h4>商品評價</h4>
+            <div class="review-list"></div>
+            <div class="add-review">
+                <label for="review-text">撰寫評論：</label>
+                <textarea class="review-text" rows="2" placeholder="分享您的使用感受"></textarea>
+                <div class="rating">
+                    <label>評分：</label>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <button class="submit-review">提交評論</button>
+            </div>
+        </div>
+</section>
+<section>
+    <h1>Korea</h1>
+    <div class="products-container">
+        <div class="box" data-order="t-1">
+            <img src="../image/soaps/Korea/KOR1.png" alt="Hetras香氛皂香皂">
+            <h2>Hetras香氛皂香皂</h2>
+            <p class="description">以天然植物精華為基底，提供溫和清潔與豐富泡沫，同時散發細緻的香氣，增添沐浴的愉悅感受。適合全膚質，尤其是喜歡舒緩芳香體驗的人士。</p>
+            <h3 class="price">$180/135g
+                <iconify-icon icon="mdi-light:cart" class="cart add-to-cart" 
+                    data-name="Hetras香氛皂香皂" data-price="180" 
+                    data-image="../image/soaps/Korea/KOR1.png"
+                    width="24" height="24">
+                </iconify-icon>
+            </h3>
+        <div class="reviews">
+            <h4>商品評價</h4>
+            <div class="review-list"></div>
+            <div class="add-review">
+                <label for="review-text">撰寫評論：</label>
+                <textarea class="review-text" rows="2" placeholder="分享您的使用感受"></textarea>
+                <div class="rating">
+                    <label>評分：</label>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <button class="submit-review">提交評論</button>
+            </div>
+        </div>
+        <div class="box" data-order="t-2">
+            <img src="../image/soaps/Korea/KOR2.png"> 
+            <h2>TOUN28純素洗髮皂</h2>
+            <p class="description">純素洗髮皂採用可持續植物成分製成，不含動物性原料與人工化學物質。專為清潔與滋養頭皮設計，有助於減少頭皮油脂與頭髮斷裂，讓秀髮健康有光澤，是環保與健康的理想選擇。</p>
+            <h3 class="price">$160/135g
+                <iconify-icon icon="mdi-light:cart" class="cart add-to-cart" 
+                    data-name="TOUN28純素洗髮皂" data-price="160" 
+                    data-image="../image/soaps/Korea/KOR2.png"
+                    width="24" height="24">
+                </iconify-icon>
+            </h3>
+        <div class="reviews">
+            <h4>商品評價</h4>
+            <div class="review-list"></div>
+            <div class="add-review">
+                <label for="review-text">撰寫評論：</label>
+                <textarea class="review-text" rows="2" placeholder="分享您的使用感受"></textarea>
+                <div class="rating">
+                    <label>評分：</label>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <button class="submit-review">提交評論</button>
+            </div>
+        </div>
+        <div class="box" data-order="t-3">
+            <img src="../image/soaps/Korea/KOR3.png" alt="Trivial Liking Nocturn">
+            <h2>Trivial Liking Nocturn</h2>
+            <p class="description">是一款結合香氛與設計感的香皂，以獨特的夜間氣息為靈感，散發深沉迷人的香氣，適合追求個性化與獨特沐浴體驗的消費者。具溫和清潔與滋潤肌膚的功能，同時是一件藝術品般的日常用品。</p>
+            <h3 class="price">$160/135g
+                <iconify-icon icon="mdi-light:cart" class="cart add-to-cart" 
+                    data-name="Trivial Liking Nocturn" data-price="160" 
+                    data-image="../image/soaps/Korea/KOR3.png"
+                    width="24" height="24">
+                </iconify-icon>
+            </h3>
+        <div class="reviews">
+            <h4>商品評價</h4>
+            <div class="review-list"></div>
+            <div class="add-review">
+                <label for="review-text">撰寫評論：</label>
+                <textarea class="review-text" rows="2" placeholder="分享您的使用感受"></textarea>
+                <div class="rating">
+                    <label>評分：</label>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <button class="submit-review">提交評論</button>
+            </div>
+        </div>
+        <div class="box" data-order="t-4">
+            <img src="/public/image/soaps/Korea/KOR5.png" alt="魚腥草&火山泥淨膚">
+            <h2>魚腥草&火山泥淨膚</h2>
+            <p class="description">這款產品結合了魚腥草與火山泥的天然成分，具有優異的深層清潔與舒緩效果，特別適合油性、痘痘肌或需要排毒的肌膚。</p>
+            <h3 class="price">$200/135g
+                <iconify-icon icon="mdi-light:cart" class="cart add-to-cart" 
+                    data-name="魚腥草&火山泥淨膚" data-price="200" 
+                    data-image="../image/soaps/Australia/AST3.jpg"
+                    width="24" height="24">
+                </iconify-icon>
+            </h3>
+        <div class="reviews">
+            <h4>商品評價</h4>
+            <div class="review-list"></div>
+            <div class="add-review">
+                <label for="review-text">撰寫評論：</label>
+                <textarea class="review-text" rows="2" placeholder="分享您的使用感受"></textarea>
+                <div class="rating">
+                    <label>評分：</label>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <button class="submit-review">提交評論</button>
+            </div>
+        </div>
+</section>
+<section>
+  <h1>Israel</h1>
+   <div class="products-container">
+    <div class="box" data-order="t-1">
+        <img src="../image/soaps/Israel/ISR2.jpg" alt="玫瑰茶語甘油手工皂">
+        <h2>玫瑰茶語甘油手工皂</h2>
+        <p class="description">採用天然甘油與玫瑰精華製成，富含保濕與滋潤成分，有效清潔肌膚同時鎖住水分。淡雅玫瑰與茶香交織，帶來放鬆心靈的沐浴享受，適合乾性及敏感肌膚使用。</p>
+        <h3 class="price">$180/135g
+            <iconify-icon icon="mdi-light:cart" class="cart add-to-cart" 
+                data-name="玫瑰茶語甘油手工皂" data-price="180" 
+                data-image="../image/soaps/Israel/ISR2.jpg"
+                width="24" height="24">
+            </iconify-icon>
+        </h3>
+    <div class="reviews">
+        <h4>商品評價</h4>
+        <div class="review-list"></div>
+        <div class="add-review">
+            <label for="review-text">撰寫評論：</label>
+            <textarea class="review-text" rows="2" placeholder="分享您的使用感受"></textarea>
+            <div class="rating">
+                <label>評分：</label>
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+            <button class="submit-review">提交評論</button>
+        </div>
+    </div>
+    <div class="box" data-order="t-2">
+        <img src="../image/soaps/Israel/ISR3.jpg"> 
+        <h2>迷迭香頌橄欖油手工皂</h2>
+        <p class="description">以高品質橄欖油為基底，融合迷迭香精華，溫和清潔並提供深層滋養，改善乾燥肌膚。迷迭香的清新香氣提神醒腦，是追求天然護膚與舒緩效果的理想選擇。。</p>
+        <h3 class="price">$160/135g
+            <iconify-icon icon="mdi-light:cart" class="cart add-to-cart" 
+                data-name="迷迭香頌橄欖油手工皂" data-price="160" 
+                data-image="../image/soaps/Israel/ISR3.jpg"
+                width="24" height="24">
+            </iconify-icon>
+        </h3>
+    <div class="reviews">
+        <h4>商品評價</h4>
+        <div class="review-list"></div>
+        <div class="add-review">
+            <label for="review-text">撰寫評論：</label>
+            <textarea class="review-text" rows="2" placeholder="分享您的使用感受"></textarea>
+            <div class="rating">
+                <label>評分：</label>
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+            <button class="submit-review">提交評論</button>
+        </div>
+    </div>
+    <div class="box" data-order="t-3">
+        <img src="../image/soaps/Israel/ISR4.jpg" alt="花果瑰瓣甘油手工皂">
+        <h2>花果瑰瓣甘油手工皂</h2>
+        <p class="description">結合天然甘油與花果精華，添加玫瑰花瓣細粒，輕柔去角質，讓肌膚光滑細緻。花果香氣濃郁，清新而甜美，為肌膚帶來潔淨與滋潤雙重享受，適合全膚質使用。具溫和清潔與滋潤肌膚的功能，同時是一件藝術品般的日常用品。</p>
+        <h3 class="price">$160/135g
+            <iconify-icon icon="mdi-light:cart" class="cart add-to-cart" 
+                data-name="Trivial Liking Nocturn" data-price="160" 
+                data-image="../image/soaps/Israel/ISR4.jpg"
+                width="24" height="24">
+            </iconify-icon>
+        </h3>
+    <div class="reviews">
+        <h4>商品評價</h4>
+        <div class="review-list"></div>
+        <div class="add-review">
+            <label for="review-text">撰寫評論：</label>
+            <textarea class="review-text" rows="2" placeholder="分享您的使用感受"></textarea>
+            <div class="rating">
+                <label>評分：</label>
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+            <button class="submit-review">提交評論</button>
+        </div>
+    </div>
+    <div class="box" data-order="t-4">
+        <img src="/public/image/soaps/Israel/ISR5.jpg" alt="玫瑰香瓣橄欖油手工皂">
+        <h2>玫瑰香瓣橄欖油手工皂</h2>
+        <p class="description">是一款以天然橄欖油為基底，並融合玫瑰花瓣和玫瑰精華的手工香皂，專為滋潤與護膚而設計。</p>
+            <iconify-icon icon="mdi-light:cart" class="cart add-to-cart" 
+                data-name="玫瑰香瓣橄欖油手工皂" data-price="200" 
+                data-image="/public/image/soaps/Israel/ISR5.jpg"
+                width="24" height="24">
+            </iconify-icon>
+        </h3>
+    <div class="reviews">
+        <h4>商品評價</h4>
+        <div class="review-list"></div>
+        <div class="add-review">
+            <label for="review-text">撰寫評論：</label>
+            <textarea class="review-text" rows="2" placeholder="分享您的使用感受"></textarea>
+            <div class="rating">
+                <label>評分：</label>
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+            <button class="submit-review">提交評論</button>
+        </div>
+    </div>
+ </section>
+    
+
+   <script src="/public/js/categories.js"></script>
+   <script src="/public/js/product.js"></script>
+</body>
+</html>
