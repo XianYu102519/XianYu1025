@@ -24,7 +24,7 @@ document.getElementById('line-login-btn').addEventListener('click', function() {
     
     // 點擊返回首頁按鈕時跳轉回首頁
     document.getElementById('home-btn').addEventListener('click', function() {
-        window.location.href = '/docs//html/member.html';  // 替換為首頁的URL
+        window.location.href = '/public/html/member.html';  // 替換為首頁的URL
     });
 });
 
@@ -39,6 +39,6 @@ document.getElementById('register-btn').addEventListener('click', function() {
     
     // 點擊返回首頁按鈕時跳轉回首頁
     document.getElementById('home-btn').addEventListener('click', function() {
-        window.location.href = '/docs/html/member.html';  // 替換為會員的URL
+        window.location.href = '/public/html/member.html';  // 替換為會員的URL
     });
 });
